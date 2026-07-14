@@ -1,0 +1,72 @@
+{
+	"camera": {
+		"lookfrom": [10.0, 15.0, -40.0],
+		"lookat": [0.0, 0.0, 0.0],
+		"upVector": [0.0, 1.0, 0.0],
+		"image_width": 1080,
+		"image_height": 1080,
+		"screen_distance": 0.75
+	},
+	"globalLight": [0.01, 0.01, 0.01],
+	"lights": [
+		{
+			"position": [20.0, 3.0, 20.0],
+			"color": [0.7, 0.0, 0.0],
+			"name": ""
+		},
+		{
+			"position": [20.0, 3.0, -20.0],
+			"color": [0.0, 0.7, 0.0],
+			"name": ""
+		},
+		{
+			"position": [-20.0, 3.0, 20.0],
+			"color": [0.0, 0.0, 0.7],
+			"name": ""
+		},
+		{
+			"position": [5.0, 10.0, 13.0],
+			"color": [0.075, 0.075, 0.075],
+			"name": ""
+		}
+	],
+	"materials": {
+		"material0": {
+			"name": "material0",
+			"color": [0.3, 0.8, 0.4],
+			"ks": [0.0, 0.0, 0.0],
+			"ka": [0.3, 0.8, 0.4],
+			"kr": [0.0, 0.0, 0.0],
+			"kt": [0.0, 0.0, 0.0],
+			"ns": 4.0,
+			"ni": 1.0,
+			"d": 1.0
+		},
+		"material5": {
+			"name": "material5",
+			"color": [0.0, 0.1, 0.8],
+			"ks": [0.5, 0.5, 0.5],
+			"ka": [1.0, 1.0, 1.0],
+			"kr": [0.0, 0.0, 0.0],
+			"kt": [0.0, 0.0, 0.0],
+			"ns": 250.0,
+			"ni": 1.45,
+			"d": 1.0
+		}
+	},
+	"objects": [
+		{
+			"type": "plane",
+			"relativePos": [0.0, -7.0, 0.0],
+			"material": "material0",
+			"normal": [0.0, 1.0, 0.0]
+		},
+		{
+			"type": "mesh",
+			"relativePos": [0.0, 0.0, 0.0],
+			"material": "material5",
+			"path": "./utils/input/monkey.obj",
+			"transform": [{ "type": "scaling", "factors": [5, 5, 5] }]
+		}
+	]
+}
